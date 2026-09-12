@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Heng Jin — Human-Centred Robotics, Physiological Sensing, and Shared Autonomy."
+    />
+    <meta name="theme-color" content="#14363b" />
+    <title>Heng Jin | Human-Centred Robotics</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23122c30'/%3E%3Ctext x='16' y='21' fill='white' font-size='13' font-family='Georgia,serif' font-weight='700' text-anchor='middle'%3EHJ%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="wordmark" href="#top" aria-label="Heng Jin — home">
+          <span class="wordmark-mark" aria-hidden="true">HJ</span>
+          <span>Heng Jin</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation"
+          aria-controls="site-navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span>
+        </button>
+
+        <nav class="site-nav" id="site-navigation" aria-label="Primary navigation">
+          <a href="#research">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#profile">Profile</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Prospective PhD Applicant · Fall 2027</p>
+          <h1 id="hero-title">Heng Jin</h1>
+          <p class="hero-discipline">Human-Centred Robotics <span>·</span> Physiological Sensing <span>·</span> Shared Autonomy</p>
+          <p class="hero-intro">
+            I develop assistive robotic systems that connect robust physiological sensing,
+            environmental perception, and adaptive autonomy to help people act more naturally.
+          </p>
+
+          <div class="affiliations" aria-label="Affiliations">
+            <p>Master’s Student, Southern University of Science and Technology</p>
+            <p>Research at Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences</p>
+          </div>
+
+          <div class="hero-actions" aria-label="Professional links">
+            <a class="button button-primary" href="./materials/Heng_Jin_CV.pdf" target="_blank" rel="noreferrer">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v11m0 0 4-4m-4 4-4-4M5 17v3h14v-3" /></svg>
+              CV
+            </a>
+            <a class="button button-secondary" href="mailto:jin_heng01@qq.com">
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 7l9 7 9-7" /></svg>
+              Email
+            </a>
+            <a
+              class="text-link"
+              href="https://scholar.google.com/scholar?q=%22An%20Adaptive%20Signal%20Recovery%20Framework%20Based%20on%20Low-Rank%20Matrix%20Completion%20for%20High-Density%20sEMG%22"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Find Heng Jin's publication on Google Scholar"
+            >
+              Google Scholar <span aria-hidden="true">↗</span>
+            </a>
+            <span class="text-link text-link-pending" title="A GitHub profile URL was not supplied">GitHub <span>link pending</span></span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <img
+              src="./publics/assets/prosthesis/真实截肢者佩戴图1.png"
+              alt="A participant wearing the full-arm prosthetic research system during an experimental task"
+              width="690"
+              height="518"
+              fetchpriority="high"
+            />
+            <span class="image-caption">Physical full-arm prosthetic system</span>
+          </div>
+          <div class="hero-stat hero-stat-top">
+            <span class="stat-kicker">Research focus</span>
+            <strong>Human in<br />the loop</strong>
+          </div>
+          <div class="hero-stat hero-stat-bottom">
+            <span class="stat-kicker">System stack</span>
+            <strong>EMG · RGB-D<br />Shared control</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-arc" aria-labelledby="arc-title">
+        <div class="section-shell">
+          <p class="eyebrow">Research trajectory</p>
+          <h2 id="arc-title">From sensing reliability to meaningful physical assistance.</h2>
+          <ol class="arc-list">
+            <li><span>01</span>Robust physiological sensing</li>
+            <li><span>02</span>Human intention &amp; state understanding</li>
+            <li><span>03</span>Environmental perception</li>
+            <li><span>04</span>Shared &amp; adaptive autonomy</li>
+            <li><span>05</span>Physical robotic assistance</li>
+            <li><span>06</span>Human–robot interaction evaluation</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="research section-shell" id="research" aria-labelledby="research-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected research</p>
+            <h2 id="research-title">Building systems around the person, not just the algorithm.</h2>
+          </div>
+          <p>
+            My work combines physiological signals, perception, and autonomy—and evaluates
+            whether the resulting assistance genuinely supports the user.
+          </p>
+        </div>
+
+        <article class="project project-featured" id="prosthesis">
+          <div class="project-index">01 <span>Flagship project</span></div>
+          <div class="project-featured-layout">
+            <div class="project-summary">
+              <p class="project-type">Assistive robotics · Shared autonomy</p>
+              <h3>Vision-Guided Shared Control for a Full-Arm Prosthesis</h3>
+              <p class="project-lead">
+                A physical human–robot interaction system that combines EMG-driven user input,
+                RGB-D environmental perception, and autonomous motion assistance for coordinated
+                reaching and grasping.
+              </p>
+              <p>
+                The framework was evaluated on real hardware with able-bodied participants and a
+                transhumeral amputee, comparing vision-guided shared control with continuous
+                muscle-driven control.
+              </p>
+              <div class="project-meta">
+                <span class="role">Co-first author</span>
+                <span class="status status-review">IEEE TNSRE · under review</span>
+              </div>
+              <ul class="tags" aria-label="Project topics">
+                <li>EMG</li>
+                <li>RGB-D</li>
+                <li>Shared Autonomy</li>
+                <li>Assistive Robotics</li>
+                <li>Human–Robot Interaction</li>
+              </ul>
+              <a class="project-link" href="#publications">View manuscript details <span aria-hidden="true">↓</span></a>
+            </div>
+
+            <div class="feature-media-grid">
+              <button
+                class="image-frame image-frame-main"
+                type="button"
+                data-lightbox-src="./publics/assets/prosthesis/真实截肢者佩戴图1.png"
+                data-lightbox-alt="Participant wearing the full-arm prosthetic system"
+                data-lightbox-caption="Full-arm prosthetic hardware in an experimental task."
+                aria-label="Enlarge full-arm prosthetic hardware photograph"
+              >
+                <img
+                  src="./publics/assets/prosthesis/真实截肢者佩戴图1.png"
+                  alt="Participant wearing a full-arm prosthetic system during an experimental task"
+                  width="690"
+                  height="518"
+                />
+                <span>Enlarge</span>
+              </button>
+              <button
+                class="image-frame image-frame-diagram"
+                type="button"
+                data-lightbox-src="./publics/assets/prosthesis/framwork.png"
+                data-lightbox-alt="Experimental protocol and examples of vision-guided full-arm prosthetic tasks"
+                data-lightbox-caption="Experimental protocol and examples of vision-guided full-arm prosthetic tasks."
+                aria-label="Enlarge prosthetic experimental protocol figure"
+              >
+                <img
+                  src="./publics/assets/prosthesis/framwork.png"
+                  alt="Experimental protocol and examples of prosthetic reaching and grasping tasks"
+                  width="1428"
+                  height="788"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>System &amp; task protocol</span>
+              </button>
+              <button
+                class="image-frame image-frame-result"
+                type="button"
+                data-lightbox-src="./publics/assets/prosthesis/result.png"
+                data-lightbox-alt="Results comparing EMG and vision-guided control across trials"
+                data-lightbox-caption="Task-level comparison between EMG control and vision-guided shared control."
+                aria-label="Enlarge prosthetic system results figure"
+              >
+                <img
+                  src="./publics/assets/prosthesis/result.png"
+                  alt="Results comparing EMG and vision-guided control across trials"
+                  width="1797"
+                  height="734"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>Performance comparison</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-split" id="signal-recovery">
+          <div class="project-index">02</div>
+          <div class="project-split-layout">
+            <div class="project-figure-pair">
+              <button
+                class="image-frame figure-wide"
+                type="button"
+                data-lightbox-src="./publics/assets/robust_signal/my_framwork.png"
+                data-lightbox-alt="ALF-SVT adaptive low-rank matrix completion framework"
+                data-lightbox-caption="ALF-SVT: adaptive low-rank completion for random and structured HD-sEMG faults."
+                aria-label="Enlarge ALF-SVT framework figure"
+              >
+                <img
+                  src="./publics/assets/robust_signal/my_framwork.png"
+                  alt="ALF-SVT adaptive low-rank matrix completion framework"
+                  width="1518"
+                  height="790"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>Method</span>
+              </button>
+              <button
+                class="image-frame figure-wide figure-bottom"
+                type="button"
+                data-lightbox-src="./publics/assets/robust_signal/my_results.png"
+                data-lightbox-alt="Signal-recovery comparison and HD-sEMG reconstruction example"
+                data-lightbox-caption="Robust recovery comparison and example HD-sEMG reconstruction."
+                aria-label="Enlarge signal recovery results figure"
+              >
+                <img
+                  src="./publics/assets/robust_signal/my_results.png"
+                  alt="Signal-recovery comparison and HD-sEMG reconstruction example"
+                  width="1988"
+                  height="715"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>Recovery results</span>
+              </button>
+            </div>
+            <div class="project-summary">
+              <p class="project-type">Robust physiological sensing</p>
+              <h3>Robust HD-sEMG Recovery</h3>
+              <p class="project-lead">
+                Adaptive low-rank matrix completion recovers corrupted or missing high-density
+                sEMG channels by using the spatial structure of dense electrode arrays.
+              </p>
+              <p>
+                The study addresses mixed-channel corruption and motion interference, with
+                experiments at up to approximately 49% corrupted data. Recovered signals retained
+                approximately 95.5% gesture-recognition performance.
+              </p>
+              <div class="project-meta">
+                <span class="role">First author</span>
+                <span class="status status-published">IEEE TIM · published</span>
+              </div>
+              <ul class="tags" aria-label="Project topics">
+                <li>HD-sEMG</li>
+                <li>Robust Sensing</li>
+                <li>Signal Recovery</li>
+                <li>Low-Rank Modeling</li>
+              </ul>
+              <a class="project-link" href="./materials/An_Adaptive_Signal_Recovery_Framework_Based_on_Low-Rank_Matrix_Completion_for_High-Density_sEMG.pdf" target="_blank" rel="noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-split project-reverse" id="human-factors">
+          <div class="project-index">03</div>
+          <div class="project-split-layout">
+            <div class="project-summary">
+              <p class="project-type">Human factors · Physiological interaction</p>
+              <h3>Human Factors and Neuromuscular Coordination in Shared Robotic Control</h3>
+              <p class="project-lead">
+                Beyond task success, this work asks how vision-assisted shared control changes the
+                user’s physiological state and coordination with a robot.
+              </p>
+              <p>
+                It combines task performance and human-factor assessment with EMG, EEG, and
+                corticomuscular coupling (CMC) to study the user side of intelligent assistance.
+              </p>
+              <div class="project-meta">
+                <span class="role">Co-first author</span>
+                <span class="status status-prep">Manuscript in preparation</span>
+              </div>
+              <ul class="tags" aria-label="Project topics">
+                <li>EEG</li>
+                <li>EMG</li>
+                <li>CMC</li>
+                <li>Human Factors</li>
+                <li>Human–Robot Coordination</li>
+              </ul>
+            </div>
+            <div class="project-figure-pair project-figure-pair-cmc">
+              <button
+                class="image-frame figure-wide figure-cmc-setup"
+                type="button"
+                data-lightbox-src="./publics/assets/human_factors/全臂假肢穿戴示例图（卡通,特别好看）.png"
+                data-lightbox-alt="Illustration of EEG and EMG acquisition in a full-arm prosthetic interaction task"
+                data-lightbox-caption="EEG and EMG acquisition in a full-arm prosthetic interaction task."
+                aria-label="Enlarge physiological acquisition illustration"
+              >
+                <img
+                  src="./publics/assets/human_factors/全臂假肢穿戴示例图（卡通,特别好看）.png"
+                  alt="Illustration of EEG and EMG acquisition in a full-arm prosthetic interaction task"
+                  width="737"
+                  height="961"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>Physiological acquisition</span>
+              </button>
+              <button
+                class="image-frame figure-wide figure-bottom"
+                type="button"
+                data-lightbox-src="./publics/assets/human_factors/results.png"
+                data-lightbox-alt="EMG and corticomuscular coupling analysis results"
+                data-lightbox-caption="EMG and corticomuscular coupling analysis across control modes."
+                aria-label="Enlarge human factors results figure"
+              >
+                <img
+                  src="./publics/assets/human_factors/results.png"
+                  alt="EMG and corticomuscular coupling analysis results"
+                  width="1910"
+                  height="841"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <span>Physiological analysis</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-compact" id="multimodal-learning">
+          <div class="project-index">04</div>
+          <div class="project-compact-media">
+            <button
+              class="image-frame"
+              type="button"
+              data-lightbox-src="./publics/assets/other_works/EMG-FMG fusion 示例.png"
+              data-lightbox-alt="EMG and FMG signals for multimodal gesture recognition"
+              data-lightbox-caption="EMG–FMG multimodal sensing for robust gesture recognition."
+              aria-label="Enlarge EMG and FMG multimodal sensing figure"
+            >
+              <img
+                src="./publics/assets/other_works/EMG-FMG fusion 示例.png"
+                alt="EMG and FMG signals for multimodal gesture recognition"
+                width="664"
+                height="353"
+                loading="lazy"
+                decoding="async"
+              />
+              <span>EMG–FMG sensing</span>
+            </button>
+          </div>
+          <div class="project-summary">
+            <p class="project-type">Multimodal learning · Robust AI</p>
+            <h3>Robust EMG–FMG Multimodal Learning</h3>
+            <p class="project-lead">
+              A temporal attention-guided mixture-of-modality-experts approach for hand-gesture
+              recognition when EMG or FMG inputs are noisy or unavailable.
+            </p>
+            <div class="project-meta">
+              <span class="role">Co-first author</span>
+              <span class="status status-prep">Manuscript in preparation</span>
+            </div>
+            <ul class="tags" aria-label="Project topics">
+              <li>EMG</li>
+              <li>FMG</li>
+              <li>Multimodal Learning</li>
+              <li>Missing Modalities</li>
+              <li>Robust AI</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <section class="publications-band" id="publications" aria-labelledby="publications-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading-light">
+            <div>
+              <p class="eyebrow">Publications</p>
+              <h2 id="publications-title">A focused record of systems, sensing, and collaboration.</h2>
+            </div>
+            <p>* Equal contribution</p>
+          </div>
+
+          <div class="publication-groups">
+            <section class="publication-group" aria-labelledby="published-title">
+              <h3 id="published-title">Published</h3>
+              <ol class="publication-list">
+                <li>
+                  <p class="publication-title"><a href="./materials/An_Adaptive_Signal_Recovery_Framework_Based_on_Low-Rank_Matrix_Completion_for_High-Density_sEMG.pdf" target="_blank" rel="noreferrer">An Adaptive Signal Recovery Framework Based on Low-Rank Matrix Completion for High-Density sEMG</a></p>
+                  <p><strong>Jin, H.</strong>, Tofunmi Oyemakinde, T., Liu, Y., Huang, J., Sun, J., Liu, Z., Li, G., Li, X. <em>IEEE Transactions on Instrumentation and Measurement</em>, 75, 1–12, 2026.</p>
+                  <span class="publication-role">First author</span>
+                </li>
+                <li>
+                  <p class="publication-title"><a href="./materials/AdaWGAN_Data_Augmentation_for_Few-Shot_HD-sEMG_Gesture_Recognition_Using_Single-Trial_Data.pdf" target="_blank" rel="noreferrer">AdaWGAN: Data Augmentation for Few-Shot HD-sEMG Gesture Recognition Using Single-Trial Data</a></p>
+                  <p>Chen, X., Liu, Y., <strong>Jin, H.</strong>, Oyemakinde, T. T., Li, G., Li, X. <em>IEEE Journal of Biomedical and Health Informatics</em>, 2026.</p>
+                  <span class="publication-role">Third author</span>
+                </li>
+              </ol>
+            </section>
+
+            <section class="publication-group" aria-labelledby="review-title">
+              <h3 id="review-title">Under review</h3>
+              <ol class="publication-list">
+                <li>
+                  <p class="publication-title">Vision-guided Full-Arm Prosthetic Control Framework Based on EMG and RGB-D Fusion</p>
+                  <p>Liu, Y.*, <strong>Jin, H.*</strong>, Zhu, Y., Chen, X., Zheng, Y., Tian, L., Deng, H., Li, G., Li, X. <em>IEEE Transactions on Neural Systems and Rehabilitation Engineering</em>, 2026.</p>
+                  <span class="publication-role">Co-first author · Under review</span>
+                </li>
+              </ol>
+            </section>
+
+            <section class="publication-group" aria-labelledby="preparation-title">
+              <h3 id="preparation-title">In preparation</h3>
+              <ol class="publication-list">
+                <li>
+                  <p class="publication-title">Human Factors and Neural-Muscular Coordination in Vision-Guided Prosthetic Interaction: A Cortico-Muscular Coupling Study</p>
+                  <p><strong>Jin, H.*</strong>, Oyemakinde, T. T.*, et al. 2026.</p>
+                  <span class="publication-role">Co-first author</span>
+                </li>
+                <li>
+                  <p class="publication-title">Temporal Attention-Guided Mixture-of-Modality-Experts Fusion for Robust EMG-FMG Gesture Recognition</p>
+                  <p>Oyemakinde, T. T.*, <strong>Jin, H.*</strong>, et al. 2026.</p>
+                  <span class="publication-role">Co-first author</span>
+                </li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="profile section-shell" id="profile" aria-labelledby="profile-title">
+        <div class="profile-intro">
+          <p class="eyebrow">Profile</p>
+          <h2 id="profile-title">Technical depth, real hardware, and a user-centred research question.</h2>
+          <p>
+            I am a Master’s student in Computer Technology at SUSTech and a Graduate Research
+            Assistant at the Shenzhen Institutes of Advanced Technology, Chinese Academy of
+            Sciences. My work is supervised by Prof. Xiangxin Li and Prof. Guanglin Li.
+          </p>
+          <dl class="profile-facts">
+            <div><dt>2024–present</dt><dd>Graduate Research Assistant, SIAT, CAS</dd></div>
+            <div><dt>2024–present</dt><dd>M.Eng. in Computer Technology, SUSTech</dd></div>
+            <div><dt>2019–2023</dt><dd>B.Sc. in Applied Physics, Hefei University of Technology</dd></div>
+          </dl>
+        </div>
+        <div class="profile-image-block">
+          <img
+            src="./publics/assets/profile/jh_picture.png"
+            alt="Portrait of Heng Jin"
+            width="533"
+            height="663"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="awards section-shell" aria-labelledby="awards-title">
+        <div class="section-heading awards-heading">
+          <div>
+            <p class="eyebrow">Recognition</p>
+            <h2 id="awards-title">Awards</h2>
+          </div>
+        </div>
+        <ul class="award-list">
+          <li><span>2026</span><strong>Second Prize</strong><p>World Robot Contest – BCI Controlled Robot Contest</p></li>
+          <li><span>2025</span><strong>First-Class Academic Scholarship</strong><p>Southern University of Science and Technology</p></li>
+          <li><span>2022</span><strong>Third Prize</strong><p>National College Physics Experiment Competition, Hefei University of Technology</p></li>
+        </ul>
+      </section>
+
+      <section class="life-section section-shell" aria-labelledby="life-title">
+        <div>
+          <p class="eyebrow">Beyond the lab</p>
+          <h2 id="life-title">Long-distance thinking.</h2>
+          <p>Running is how I recover perspective and sustain the steady work that research demands.</p>
+        </div>
+        <img
+          src="./publics/assets/about_life/跑步图1.png"
+          alt="Heng Jin running outdoors"
+          width="828"
+          height="534"
+          loading="lazy"
+          decoding="async"
+        />
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="section-shell footer-inner">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s discuss human-centred assistive robotics.</h2>
+        </div>
+        <div class="footer-contact">
+          <a href="mailto:jin_heng01@qq.com">jin_heng01@qq.com <span aria-hidden="true">↗</span></a>
+          <p>Shenzhen, China</p>
+          <p class="footer-note">© <span id="current-year"></span> Heng Jin</p>
+        </div>
+      </div>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption">
+      <button class="lightbox-close" type="button" aria-label="Close image viewer">×</button>
+      <img id="lightbox-image" src="" alt="" />
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
