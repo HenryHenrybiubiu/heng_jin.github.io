@@ -9,7 +9,7 @@
     <title>Heng Jin | Human-Centred Interactive Robotics</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -19,7 +19,7 @@
       <div class="header-inner">
         <a class="wordmark" href="#top" aria-label="Heng Jin home" data-i18n-aria="homeLabel">
           <span class="wordmark-mark">HJ</span>
-          <span class="wordmark-name">Heng Jin</span>
+          <span class="wordmark-name" data-i18n="displayName">Heng Jin</span>
         </a>
 
         <nav class="site-nav" aria-label="Primary navigation" data-i18n-aria="primaryNavLabel">
@@ -57,9 +57,9 @@
       <section class="hero section-shell" id="about">
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="heroEyebrow">PhD Applicant · Fall 2027</p>
-          <h1>Heng Jin</h1>
+          <h1 data-i18n="displayName">Heng Jin</h1>
           <p class="hero-discipline" data-i18n="heroDiscipline">Human-centred interactive robotics</p>
-          <p class="hero-intro" data-i18n="heroIntro">I build physical robot systems that infer human intention, understand visual context, and share control with their users.</p>
+          <p class="hero-intro" data-i18n="heroIntro">I build physical robot systems that combine biosignals and visual context to understand intent, assist action, and measure the human experience.</p>
           <p class="hero-affiliation" data-i18n="heroAffiliation">M.Eng. candidate, SUSTech · Graduate Research Assistant, SIAT, CAS</p>
           <div class="hero-links">
             <a class="button button-primary" href="./materials/Heng_Jin_CV.pdf" target="_blank" rel="noopener" data-i18n="downloadCv">Download CV <span aria-hidden="true">↗</span></a>
@@ -67,9 +67,9 @@
             <a class="button button-text" href="https://github.com/hueeyhueeybiubiu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
           </div>
           <div class="proof-strip" aria-label="Research highlights" data-i18n-aria="highlightsLabel">
-            <div><strong>02</strong><span data-i18n="proofPublications">journal publications<br>in 2026</span></div>
-            <div><strong>8+1</strong><span data-i18n="proofEvaluation">participants in<br>prosthesis evaluation</span></div>
-            <div><strong>PCT</strong><span data-i18n="proofPatent">motion-intention<br>recognition patent</span></div>
+            <div><strong>2</strong><span data-i18n="proofPublications">journal publications<br>in 2026</span></div>
+            <div><strong>H/W</strong><span data-i18n="proofEvaluation">physical system<br>&amp; user evaluation</span></div>
+            <div><strong>PCT</strong><span data-i18n="proofPatent">patent<br>application</span></div>
           </div>
         </div>
 
@@ -87,7 +87,7 @@
           <div class="focus-headline">
             <p class="eyebrow eyebrow-light" data-i18n="focusEyebrow">A research direction</p>
             <h2 data-i18n="focusTitle">My work follows one question: how can a robot better understand and support its user?</h2>
-            <p class="focus-summary" data-i18n="focusIntro">I approach it as a chain of responsibility: first recover a dependable physiological reading of intention; then combine it with visual task context to guide action; finally, evaluate not only what the system accomplishes, but how the person experiences sharing control with it.</p>
+            <p class="focus-summary" data-i18n="focusIntro">Useful assistance starts before a robot moves: it needs a dependable estimate of intent, an understanding of task context, and evidence that its help lowers rather than shifts the user’s effort. I study this chain as one physical human–robot loop.</p>
           </div>
           <figure class="focus-visual">
             <div class="focus-visual-surface">
@@ -114,7 +114,7 @@
         </div>
         <div class="section-shell future-direction">
           <span data-i18n="futureLabel">Next direction</span>
-          <p data-i18n="futureText">I am eager to extend robust multimodal sensing into learning-enabled policies on real robotic hardware.</p>
+          <p data-i18n="futureText">Next, I want to build multimodal robot interfaces that combine EMG-based intent with visual task context for reliable shared control. My goal is to carry this loop onto real robot hardware, where learning-enabled assistance can be tested in demanding manipulation tasks and evaluated with the people who use it.</p>
         </div>
       </section>
 
@@ -139,9 +139,9 @@
             <div class="project-feature-layout">
               <div class="project-copy">
                 <p class="lead" data-i18n="projectOneLead">Reliable support starts with a reliable reading of intent.</p>
-                <p data-i18n="projectOneText">HD-sEMG is vulnerable to channel failures and motion artefacts. I developed an adaptive low-rank recovery framework that reconstructs corrupted recordings before downstream intention recognition, making multimodal interaction more dependable.</p>
+                <p data-i18n="projectOneText">HD-sEMG can be disrupted by faulty channels and motion artefacts. I developed an adaptive low-rank recovery method that repairs corrupted recordings before intent decoding, giving downstream interaction a more dependable signal.</p>
                 <div class="system-loop" data-i18n="projectOneLoop">HD-sEMG <span aria-hidden="true">→</span> adaptive recovery <span aria-hidden="true">→</span> reliable intent decoding</div>
-                <dl class="project-facts">
+                <dl class="project-facts project-facts-three">
                   <div><dt data-i18n="factRobustness">Robustness</dt><dd data-i18n="projectOneEvidence">Evaluated under mixed-fault conditions up to 49%</dd></div>
                   <div><dt data-i18n="factRecognition">Recognition</dt><dd data-i18n="projectOneOutcome">95.5% accuracy across seven hand-gesture tasks</dd></div>
                   <div><dt data-i18n="factRole">Role</dt><dd data-i18n="projectOneRole">First author · method development and validation</dd></div>
@@ -151,25 +151,25 @@
                   <a class="text-link text-link-muted" href="https://doi.org/10.1109/TIM.2025.3650240" target="_blank" rel="noopener">DOI <span aria-hidden="true">↗</span></a>
                 </div>
               </div>
-              <div class="research-gallery" data-gallery data-gallery-interval="6800" aria-label="Signal recovery image gallery" data-i18n-aria="projectOneGalleryLabel">
+              <div class="research-gallery research-gallery--signal" data-gallery data-gallery-interval="6800" aria-label="Signal recovery image gallery" data-i18n-aria="projectOneGalleryLabel">
                 <div class="gallery-stage">
                   <figure class="gallery-slide is-active" data-gallery-slide aria-hidden="false">
-                    <div class="gallery-media-surface gallery-surface-signal"><img src="./publics/assets/robust_signal/my_framwork.png" alt="Adaptive low-rank framework for fault recovery" data-i18n-alt="projectOneSlideTwoAlt"></div>
-                    <figcaption><span data-i18n="projectOneSlideTwoCaption">Adaptive low-rank recovery framework</span><span data-gallery-counter>01 / 03</span></figcaption>
+                    <div class="gallery-media-surface gallery-surface-signal"><img src="./publics/assets/robust_signal/hd-semg_2D presentation.png" alt="High-density EMG acquisition and two-dimensional signal representation" data-i18n-alt="projectOneSlideOneAlt"></div>
+                    <figcaption><span data-i18n="projectOneSlideOneCaption">HD-sEMG acquisition and 2D signal representation</span><span data-gallery-counter>01 / 03</span></figcaption>
+                  </figure>
+                  <figure class="gallery-slide" data-gallery-slide aria-hidden="true" hidden>
+                    <div class="gallery-media-surface gallery-surface-signal"><img src="./publics/assets/robust_signal/my_framwork.png" loading="lazy" alt="Adaptive low-rank framework for fault recovery" data-i18n-alt="projectOneSlideTwoAlt"></div>
+                    <figcaption><span data-i18n="projectOneSlideTwoCaption">Adaptive low-rank recovery framework</span><span data-gallery-counter>02 / 03</span></figcaption>
                   </figure>
                   <figure class="gallery-slide" data-gallery-slide aria-hidden="true" hidden>
                     <div class="gallery-media-surface gallery-surface-signal"><img src="./publics/assets/robust_signal/my_results.png" loading="lazy" alt="Signal-recovery analysis and reconstruction results" data-i18n-alt="projectOneSlideThreeAlt"></div>
-                    <figcaption><span data-i18n="projectOneSlideThreeCaption">Recovery analysis under mixed faults</span><span data-gallery-counter>02 / 03</span></figcaption>
-                  </figure>
-                  <figure class="gallery-slide" data-gallery-slide aria-hidden="true" hidden>
-                    <div class="gallery-media-surface gallery-surface-signal"><img src="./publics/assets/robust_signal/hd-semg_2D presentation.png" loading="lazy" alt="High-density EMG acquisition and two-dimensional signal representation" data-i18n-alt="projectOneSlideOneAlt"></div>
-                    <figcaption><span data-i18n="projectOneSlideOneCaption">HD-sEMG acquisition and 2D signal representation</span><span data-gallery-counter>03 / 03</span></figcaption>
+                    <figcaption><span data-i18n="projectOneSlideThreeCaption">Recovery analysis under mixed faults</span><span data-gallery-counter>03 / 03</span></figcaption>
                   </figure>
                 </div>
                 <div class="gallery-thumbnails" aria-label="Choose signal-recovery image">
-                  <button class="gallery-thumb is-active" type="button" data-gallery-thumb data-gallery-index="0" aria-pressed="true"><img src="./publics/assets/robust_signal/my_framwork.png" alt=""><span data-i18n="projectOneSlideTwoCaption">Adaptive low-rank recovery framework</span></button>
-                  <button class="gallery-thumb" type="button" data-gallery-thumb data-gallery-index="1" aria-pressed="false"><img src="./publics/assets/robust_signal/my_results.png" alt=""><span data-i18n="projectOneSlideThreeCaption">Recovery analysis under mixed faults</span></button>
-                  <button class="gallery-thumb" type="button" data-gallery-thumb data-gallery-index="2" aria-pressed="false"><img src="./publics/assets/robust_signal/hd-semg_2D presentation.png" alt=""><span data-i18n="projectOneSlideOneCaption">HD-sEMG acquisition and 2D signal representation</span></button>
+                  <button class="gallery-thumb is-active" type="button" data-gallery-thumb data-gallery-index="0" aria-pressed="true"><img src="./publics/assets/robust_signal/hd-semg_2D presentation.png" alt=""><span data-i18n="projectOneSlideOneCaption">HD-sEMG acquisition and 2D signal representation</span></button>
+                  <button class="gallery-thumb" type="button" data-gallery-thumb data-gallery-index="1" aria-pressed="false"><img src="./publics/assets/robust_signal/my_framwork.png" alt=""><span data-i18n="projectOneSlideTwoCaption">Adaptive low-rank recovery framework</span></button>
+                  <button class="gallery-thumb" type="button" data-gallery-thumb data-gallery-index="2" aria-pressed="false"><img src="./publics/assets/robust_signal/my_results.png" alt=""><span data-i18n="projectOneSlideThreeCaption">Recovery analysis under mixed faults</span></button>
                 </div>
               </div>
             </div>
@@ -189,11 +189,11 @@
             <h3 data-i18n="projectTwoTitle">Vision-Guided Shared Control for a Full-Arm Prosthesis</h3>
             <div class="project-feature-layout">
               <div class="project-copy">
-                <p class="lead" data-i18n="projectTwoLead">EMG provides the intent trigger; RGB-D supplies visual task context for coordinated assistance.</p>
-                <p data-i18n="projectTwoText">This full-arm prosthetic system combines EMG commands, RGB-D perception, and shared autonomy for reaching and grasping. It is evaluated as a complete human–robot interaction loop rather than only as an offline model.</p>
+                <p class="lead" data-i18n="projectTwoLead">EMG signals intent; RGB-D provides task context for coordinated assistance.</p>
+                <p data-i18n="projectTwoText">This full-arm prosthesis combines EMG commands, RGB-D perception, and shared autonomy for reaching and grasping. It tests the complete physical interaction loop rather than only an offline model.</p>
                 <div class="system-loop" data-i18n="projectTwoLoop">EMG intent <span aria-hidden="true">→</span> RGB-D task context <span aria-hidden="true">→</span> shared assistive action</div>
-                <dl class="project-facts">
-                  <div><dt data-i18n="factEvidence">Evidence</dt><dd data-i18n="projectTwoEvidence">8 able-bodied participants + 1 transhumeral amputee participant</dd></div>
+                <dl class="project-facts project-facts-three">
+                  <div><dt data-i18n="factValidation">Physical validation</dt><dd data-i18n="projectTwoEvidence">Real-hardware prosthesis evaluation, including a transhumeral amputee participant</dd></div>
                   <div><dt data-i18n="factOutcome">Outcome</dt><dd data-i18n="projectTwoOutcome">Shorter completion time and higher success than EMG-only control</dd></div>
                   <div><dt data-i18n="factRole">Role</dt><dd data-i18n="projectTwoRole">Co-first author · framework development and evaluation</dd></div>
                 </dl>
@@ -233,9 +233,9 @@
             <h3 data-i18n="projectThreeTitle">Human Factors and Neural–Muscular Coordination in Prosthetic Interaction</h3>
             <div class="project-feature-layout">
               <div class="project-copy">
-                <p class="lead" data-i18n="projectThreeLead">Better task performance is not enough if the user remains overloaded.</p>
-                <p data-i18n="projectThreeText">This work compares strategies using task performance, NASA-TLX, sEMG, EEG, and corticomuscular coupling. It asks whether better assistance also lowers the human cost of control.</p>
-                <dl class="project-facts">
+                <p class="lead" data-i18n="projectThreeLead">Better control matters only if it also reduces the user’s effort.</p>
+                <p data-i18n="projectThreeText">We compare control strategies with task performance, NASA-TLX, sEMG, EEG, and corticomuscular coupling to examine whether improved assistance also reduces user burden.</p>
+                <dl class="project-facts project-facts-three">
                   <div><dt data-i18n="factMethods">Methods</dt><dd data-i18n="projectThreeMethods">NASA-TLX · sEMG · EEG · corticomuscular coupling</dd></div>
                   <div><dt data-i18n="factPreliminary">Preliminary observation</dt><dd data-i18n="projectThreeFinding">Less sustained activation with intermittent recovery during vision-guided control</dd></div>
                   <div><dt data-i18n="factRole">Role</dt><dd data-i18n="projectThreeRole">Co-first author · study design and analysis</dd></div>
