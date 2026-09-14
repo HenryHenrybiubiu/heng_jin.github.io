@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div id="top" class="page-top-landmark" tabindex="-1"></div>
     <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
 
-    <header class="site-header" id="top">
+    <header class="site-header">
       <div class="header-inner">
         <a class="wordmark" href="#top" aria-label="Heng Jin home" data-i18n-aria="homeLabel">
           <span class="wordmark-mark">HJ</span>
@@ -64,11 +65,11 @@
           <div class="hero-links">
             <a class="button button-primary" href="./materials/Heng_Jin_CV.pdf" target="_blank" rel="noopener" data-i18n="downloadCv">Download CV <span aria-hidden="true">↗</span></a>
             <a class="button button-secondary" href="mailto:jin_heng01@qq.com" data-i18n="emailMe">Email me <span aria-hidden="true">↗</span></a>
-            <a class="button button-text" href="https://github.com/hueeyhueeybiubiu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button-text" href="https://github.com/henryhenrybiubiu" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
           </div>
           <div class="proof-strip" aria-label="Research highlights" data-i18n-aria="highlightsLabel">
             <div><strong>2</strong><span data-i18n="proofPublications">journal publications<br>in 2026</span></div>
-            <div><strong>H/W</strong><span data-i18n="proofEvaluation">physical system<br>&amp; user evaluation</span></div>
+            <div><strong data-i18n="proofHardwareMetric">REAL</strong><span data-i18n="proofEvaluation">physical system<br>&amp; user evaluation</span></div>
             <div><strong>PCT</strong><span data-i18n="proofPatent">patent<br>application</span></div>
           </div>
         </div>
@@ -411,7 +412,7 @@
       <div class="section-shell footer-inner">
         <span>© <span id="current-year"></span> Heng Jin</span>
         <span data-i18n="footerText">Human-centred interactive robotics.</span>
-        <a href="#top" data-i18n="backToTop">Back to top ↑</a>
+        <a href="#top" data-back-to-top data-i18n="backToTop">Back to top ↑</a>
       </div>
     </footer>
 

@@ -25,6 +25,7 @@
       downloadCv: "Download CV <span aria-hidden=\"true\">↗</span>",
       emailMe: "Email me <span aria-hidden=\"true\">↗</span>",
       proofPublications: "journal publications<br>in 2026",
+      proofHardwareMetric: "REAL",
       proofEvaluation: "physical system<br>&amp; user evaluation",
       proofPatent: "patent<br>application",
       portraitAlt: "Portrait of Heng Jin",
@@ -186,6 +187,7 @@
       downloadCv: "下载简历 <span aria-hidden=\"true\">↗</span>",
       emailMe: "联系我 <span aria-hidden=\"true\">↗</span>",
       proofPublications: "2026 年发表的<br>期刊论文",
+      proofHardwareMetric: "实体",
       proofEvaluation: "实体系统<br>与使用者评估",
       proofPatent: "PCT 专利<br>申请",
       portraitAlt: "金恒的人像照片",
@@ -506,6 +508,13 @@
     menuButton.setAttribute("aria-expanded", "false");
     mobileMenu.hidden = true;
   };
+
+  const backToTop = document.querySelector("[data-back-to-top]");
+  backToTop?.addEventListener("click", (event) => {
+    event.preventDefault();
+    closeMenu();
+    window.scrollTo({ top: 0, behavior: reducedMotion.matches ? "auto" : "smooth" });
+  });
 
   initGalleries();
   initViewportVideos();
