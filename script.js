@@ -162,6 +162,7 @@
       contactEmail: "Email Heng <span aria-hidden=\"true\">↗</span>",
       contactCv: "Download CV <span aria-hidden=\"true\">↗</span>",
       footerText: "Human-centred interactive robotics.",
+      analyticsNotice: "This site uses privacy-first, aggregate analytics and does not collect names or email addresses.",
       backToTop: "Back to top ↑"
     },
     zh: {
@@ -324,6 +325,7 @@
       contactEmail: "邮件联系金恒 <span aria-hidden=\"true\">↗</span>",
       contactCv: "下载简历 <span aria-hidden=\"true\">↗</span>",
       footerText: "以人为中心的交互机器人研究。",
+      analyticsNotice: "本站使用隐私优先的汇总访问统计，不收集姓名或邮箱。",
       backToTop: "回到顶部 ↑"
     }
   };
@@ -340,19 +342,19 @@
       const thumbnails = [...gallery.querySelectorAll("[data-gallery-thumb]")];
       if (slides.length < 2 || thumbnails.length !== slides.length) return;
 
-      const interval = Number(gallery.dataset.galleryInterval) || 6800;
+      const interval = Number(gallery.dataset.galleryInterval) || 4000;
       let currentIndex = Math.max(0, slides.findIndex((slide) => slide.classList.contains("is-active")));
       let timer;
       let inView = false;
       let pointerOver = false;
-      let focusWithin = false;
+      const stage = gallery.querySelector(".gallery-stage") || gallery;
 
       const stopRotation = () => {
         if (timer) window.clearInterval(timer);
         timer = undefined;
       };
 
-      const canRotate = () => inView && !pointerOver && !focusWithin && !document.hidden && !reducedMotion.matches;
+      const canRotate = () => inView && !pointerOver && !document.hidden && !reducedMotion.matches;
 
       const refreshRotation = () => {
         stopRotation();
@@ -386,31 +388,21 @@
         thumbnail.addEventListener("click", () => setSlide(index));
       });
 
-      gallery.addEventListener("pointerenter", () => {
+      stage.addEventListener("pointerenter", () => {
         pointerOver = true;
         refreshRotation();
       });
-      gallery.addEventListener("pointerleave", () => {
+      stage.addEventListener("pointerleave", () => {
         pointerOver = false;
         refreshRotation();
-      });
-      gallery.addEventListener("focusin", () => {
-        focusWithin = true;
-        refreshRotation();
-      });
-      gallery.addEventListener("focusout", () => {
-        window.setTimeout(() => {
-          focusWithin = gallery.contains(document.activeElement);
-          refreshRotation();
-        }, 0);
       });
 
       if ("IntersectionObserver" in window) {
         const observer = new IntersectionObserver(([entry]) => {
-          inView = entry.isIntersecting && entry.intersectionRatio >= 0.35;
+          inView = entry.isIntersecting;
           refreshRotation();
-        }, { threshold: [0, 0.35, 0.7] });
-        observer.observe(gallery);
+        }, { threshold: [0, 0.1] });
+        observer.observe(stage);
       } else {
         inView = true;
       }
