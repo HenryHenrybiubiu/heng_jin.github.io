@@ -493,7 +493,6 @@
       button.setAttribute("aria-pressed", String(isActive));
     });
 
-    try { localStorage.setItem("portfolio-language", language); } catch (_) { /* Storage can be unavailable. */ }
   };
 
   const closeMenu = () => {
@@ -531,7 +530,5 @@
   header?.classList.toggle("is-scrolled", window.scrollY > 8);
   document.getElementById("current-year").textContent = new Date().getFullYear();
 
-  let preferredLanguage = "en";
-  try { preferredLanguage = localStorage.getItem("portfolio-language") || "en"; } catch (_) { /* English is the default. */ }
-  setLanguage(preferredLanguage === "zh" ? "zh" : "en");
+  setLanguage("en");
 })();
