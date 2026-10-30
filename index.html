@@ -275,18 +275,16 @@
             <p data-i18n="motionIntro">I am developing MotionTwin to explore how muscle inputs produce movement. The current HandLab prototype brings the right wrist and five fingers into an interactive MuJoCo simulation, with anatomical visualization and tools for inspecting muscle–tendon mechanics.</p>
             <dl class="motiontwin-progress">
               <div><dt data-i18n="motionNowLabel">Current prototype</dt><dd data-i18n="motionNow">Muscle-driven wrist and finger motion, joint locking, fingertip loads, tendon-path inspection, and experiment export.</dd></div>
-              <div><dt data-i18n="motionNextLabel">Next milestone</dt><dd data-i18n="motionNext">Integrate the elbow, forearm, wrist, and fingers into one physical chain, then extend to the shoulder.</dd></div>
+              <div><dt data-i18n="motionNextLabel">Next milestone</dt><dd data-i18n="motionNext">Integrate the elbow, forearm, wrist, and fingers into one physical chain, then extend to the shoulder. The long-term plan is to expand toward whole-body musculoskeletal simulation.</dd></div>
             </dl>
             <p class="motiontwin-note" data-i18n="motionNote">Research prototype; intrinsic-muscle coverage and individual calibration remain in development.</p>
           </div>
           <figure class="motiontwin-media">
-            <!-- Replace this preview with a controls-enabled video when the hand demo is supplied. -->
-            <div class="motiontwin-video-slot">
-              <span class="motiontwin-media-kicker">MOTIONTWIN / HANDLAB</span>
-              <div class="motiontwin-media-title" data-i18n="motionMediaTitle">From muscle input<br>to hand movement.</div>
-              <span class="motiontwin-media-state" data-i18n="motionMediaState">Hand demo · Coming soon</span>
-            </div>
-            <figcaption data-i18n="motionCaption">A video walkthrough of the current hand prototype will be added here.</figcaption>
+            <video controls playsinline preload="metadata" poster="./publics/assets/motiontwin/motiontwin-handlab-r6-poster.jpg" aria-label="MotionTwin HandLab R6 demonstration at 2x speed" data-i18n-aria="motionVideoLabel">
+              <source src="./publics/assets/motiontwin/motiontwin-handlab-r6-demo-2x.mp4" type="video/mp4">
+              <a href="./publics/assets/motiontwin/motiontwin-handlab-r6-demo-2x.mp4" data-i18n="motionVideoFallback">Watch the hand demonstration</a>
+            </video>
+            <figcaption data-i18n="motionCaption">MotionTwin HandLab R6 · Wrist and finger simulation walkthrough · 2× speed.</figcaption>
           </figure>
         </div>
       </section>
