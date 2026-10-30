@@ -3,6 +3,18 @@
 
   const translations = {
     en: {
+      motionEyebrow: "Current development",
+      motionStatus: "Ongoing",
+      motionSubtitle: "An interactive musculoskeletal simulation workbench.",
+      motionIntro: "I am developing MotionTwin to explore how muscle inputs produce movement. The current HandLab prototype brings the right wrist and five fingers into an interactive MuJoCo simulation, with anatomical visualization and tools for inspecting muscle–tendon mechanics.",
+      motionNowLabel: "Current prototype",
+      motionNow: "Muscle-driven wrist and finger motion, joint locking, fingertip loads, tendon-path inspection, and experiment export.",
+      motionNextLabel: "Next milestone",
+      motionNext: "Integrate the elbow, forearm, wrist, and fingers into one physical chain, then extend to the shoulder.",
+      motionNote: "Research prototype; intrinsic-muscle coverage and individual calibration remain in development.",
+      motionMediaTitle: "From muscle input<br>to hand movement.",
+      motionMediaState: "Hand demo · Coming soon",
+      motionCaption: "A video walkthrough of the current hand prototype will be added here.",
       pageTitle: "Heng Jin | Human-Centred Interactive Robotics",
       skip: "Skip to content",
       menu: "Open menu",
@@ -167,6 +179,18 @@
       backToTop: "Back to top ↑"
     },
     zh: {
+      motionEyebrow: "正在开发",
+      motionStatus: "进行中 · Ongoing",
+      motionSubtitle: "交互式人体肌骨仿真实验平台。",
+      motionIntro: "我正在开发 MotionTwin，探索肌肉输入如何产生运动。目前的 HandLab 原型将右腕与五指接入交互式 MuJoCo 仿真，结合解剖可视化与肌肉—肌腱力学检查工具。",
+      motionNowLabel: "当前原型",
+      motionNow: "肌肉驱动的腕指运动、关节锁定、指尖外力、肌腱路径检查与实验记录导出。",
+      motionNextLabel: "下一阶段",
+      motionNext: "将肘、前臂、腕与五指整合为统一物理链，再扩展至肩部。",
+      motionNote: "研究原型；手内在肌覆盖与个体参数标定仍待完善。",
+      motionMediaTitle: "从肌肉输入<br>到手部运动。",
+      motionMediaState: "手部演示 · 即将补充",
+      motionCaption: "这里将补充当前手部原型的视频演示。",
       pageTitle: "金恒 | 以人为中心的交互机器人研究",
       skip: "跳到正文",
       menu: "打开菜单",

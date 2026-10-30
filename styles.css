@@ -181,7 +181,7 @@ a { color: inherit; }
 .project-heading-row .project-type { margin: 0; }
 .project h3 { max-width: 810px; margin: 11px 0 0; color: var(--deep); font-family: var(--serif); font-size: clamp(37px, 5.15vw, 65px); font-weight: 500; letter-spacing: -.055em; line-height: .95; }
 .status-row { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
-.status-pill { display: inline-flex; align-items: center; min-height: 27px; padding: 5px 9px; border: 1px solid var(--line-strong); color: var(--ink-soft); background: var(--surface); font-family: var(--mono); font-size: 10.5px; letter-spacing: .015em; line-height: 1.2; }
+.status-pill { display: inline-flex; align-items: center; min-height: 34px; padding: 7px 11px; border: 1px solid var(--line-strong); color: var(--ink); background: var(--surface); font-family: var(--mono); font-size: 13px; font-weight: 600; letter-spacing: .015em; line-height: 1.35; }
 .status-dark { border-color: var(--deep); color: var(--on-deep); background: var(--deep); }
 .status-published { border-color: #a8d0ce; color: #0d6262; background: #e4f1f0; }
 .status-award { border-color: #edbda9; color: #93452d; background: #fbebe5; }
@@ -414,3 +414,32 @@ figcaption { margin-top: 9px; color: var(--ink-soft); font-family: var(--mono); 
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
 }
+
+/* MotionTwin progress and media. */
+.focus-detail { padding-bottom: clamp(48px, 6vw, 76px); }
+.project-heading-row { flex-wrap: wrap; }
+.publication-status { font-size: 13px; font-weight: 600; padding: 5px 9px; }
+.publication-topline { font-weight: 600; }
+.card-meta > span:not(.status-pill) { font-size: 12px; font-weight: 600; }
+.motiontwin-section { padding-block: clamp(65px, 8vw, 108px); border-top: 1px solid var(--line); background: #e8f1f0; }
+.motiontwin-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(32px, 5vw, 72px); }
+.motiontwin-topline { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-bottom: 20px; }
+.motiontwin-topline .eyebrow { margin: 0; }
+.status-ongoing { background: var(--deep); border-color: var(--deep); color: white; }
+.motiontwin-copy h2 { font-size: clamp(46px, 6vw, 76px); letter-spacing: -.05em; color: var(--deep); }
+.motiontwin-subtitle { font-size: 22px; font-weight: 600; line-height: 1.4; margin: 16px 0; }
+.motiontwin-copy > p:not(.motiontwin-subtitle) { color: var(--ink-soft); font-size: 16px; }
+.motiontwin-progress { margin: 28px 0 0; }
+.motiontwin-progress > div { padding: 15px 0; border-top: 1px solid #bdcfce; }
+.motiontwin-progress dt { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .055em; color: var(--signal-dark); margin-bottom: 6px; }
+.motiontwin-progress dd { margin: 0; font-size: 16px; line-height: 1.55; }
+.motiontwin-copy .motiontwin-note { font-size: 13px; margin-top: 18px; }
+.motiontwin-media { margin: 0; min-width: 0; }
+.motiontwin-video-slot { aspect-ratio: 4 / 3; display: flex; flex-direction: column; justify-content: space-between; padding: clamp(24px, 3vw, 42px); background: radial-gradient(ellipse at top right, #235d66, transparent 70%), var(--deep-3); color: var(--on-deep); border: 1px solid #2c535b; }
+.motiontwin-media-kicker { font-family: var(--mono); font-size: 11px; letter-spacing: .12em; color: #a3cfce; }
+.motiontwin-media-title { font-family: var(--serif); font-size: clamp(30px, 3.6vw, 49px); letter-spacing: -.035em; line-height: 1.12; margin-block: 32px; }
+.motiontwin-media-state { font-family: var(--mono); font-size: 12px; color: #bcd9d8; border-top: 1px solid #456168; padding-top: 16px; }
+.motiontwin-media figcaption { font-size: 13px; line-height: 1.5; color: var(--ink-soft); padding-top: 13px; }
+.motiontwin-media video { width: 100%; display: block; }
+@media (max-width: 900px) { .motiontwin-grid { grid-template-columns: 1fr; } .motiontwin-video-slot { aspect-ratio: 16 / 9; } }
+@media (max-width: 600px) { .status-pill { font-size: 12px; } .motiontwin-video-slot { aspect-ratio: 4 / 3; } }
